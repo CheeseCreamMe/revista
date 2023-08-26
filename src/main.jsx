@@ -7,6 +7,7 @@ import Home from './assets/pages/home'
 import Eventos from './assets/pages/eventos'
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

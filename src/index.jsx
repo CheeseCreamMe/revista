@@ -17,6 +17,7 @@ return <>
 
     </div>
     <Outlet/>
+    
 </>;
 }
 export default NavigationBar
