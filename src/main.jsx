@@ -5,6 +5,8 @@ import './assets/css/index.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './assets/pages/home'
 import Eventos from './assets/pages/eventos'
+import Imagenes from './assets/pages/imagenes'
+import Noticias from './assets/pages/Noticias'
 
 
 
@@ -16,6 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/' element={<Home/>}>  </Route>
           <Route path='Home' element={<Home/>}>  </Route>
           <Route path='Events' element={<Eventos/>}>  </Route>
+          <Route path='images' element={<Imagenes/>}>  </Route>
+          <Route path='News' element={<Noticias/>}>  </Route>
           <Route path='*' element={<Home/>}>  </Route>
         </Route>
       </Routes>

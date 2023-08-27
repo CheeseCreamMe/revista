@@ -1,0 +1,71 @@
+.container-calendar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .table {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+  }
+  .table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+  .table thead {
+    background-color: #343a40;
+    color: white;
+  }
+  .event {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .event-details {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: none;
+    width: 200px;
+  }
+  .event:hover .event-details {
+    display: block;
+  }
+  /* ... Estilos anteriores ... */
+
+.full-screen-calendar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 700;
+  }
+  .btnPr{
+    z-index: 900;
+    position: fixed;
+    left: 20px;
+    top: 12vh;
+    border-radius: 20px;
+    background-color: #007bff;
+    border: none;
+    padding: 8px;
+  }
